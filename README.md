@@ -23,6 +23,11 @@
 
 
 # Create apps in Firebase (Android & iOS)
+Android
 1. In Firebase Console → Project Overview → Project settings → under your apps section click Android icon to add Android app.
 2. Enter your Android package name (e.g. com.example.my_auth_app). You will get it from build.gradle.kts file.
 then follow the instructions there.
+
+iOS
+1. In Firebase Console → add iOS app. Provide your app’s Bundle ID (e.g. com.example.myAuthApp).
+2. follow instructions there
