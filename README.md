@@ -11,4 +11,14 @@
     Facebook sign in (facebook plugin + Firebase credential).
 6. Test
 
+# Create Firebase project & enable providers
+1. Open https://console.firebase.google.com
+ → Add project → follow steps.
+2. In the Firebase console, go to Build -> Authentication → Sign-in method:
+   Enable Email/Password.
+   Enable Google (no extra info; but Android requires SHA-1). 
+   Enable Facebook — you’ll enter App ID and App Secret from Facebook Developer Console (next section).
+
+   (You’ll come back here after setting up Android package names / iOS bundle ids / Facebook App.)
+
 
