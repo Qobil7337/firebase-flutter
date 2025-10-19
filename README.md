@@ -14,7 +14,7 @@
 # Create Firebase project & enable providers
 1. Open https://console.firebase.google.com
  → Add project → follow steps.
-2. In the Firebase console, go to Build -> Authentication → Sign-in method:
+2. In the Firebase console, go to Build → Authentication → Sign-in method:
    Enable Email/Password.
    Enable Google (no extra info; but Android requires SHA-1). 
    Enable Facebook — you’ll enter App ID and App Secret from Facebook Developer Console (next section).
@@ -22,3 +22,7 @@
    (You’ll come back here after setting up Android package names / iOS bundle ids / Facebook App.)
 
 
+# Create apps in Firebase (Android & iOS)
+1. In Firebase Console → Project Overview → Project settings → under your apps section click Android icon to add Android app.
+2. Enter your Android package name (e.g. com.example.my_auth_app). You will get it from build.gradle.kts file.
+then follow the instructions there.
