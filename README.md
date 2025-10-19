@@ -1,1 +1,14 @@
 # firebase-flutter
+
+# Quick overview
+1. Create Firebase project in Firebase Console and enable Authentication providers (Email/Password, Google, Facebook).
+2. Add Android & iOS apps in Firebase, download google-services.json (Android) and GoogleService-Info.plist (iOS), and configure platform files (incl. Android SHA-1).
+3. Install & run the FlutterFire CLI to generate firebase_options.dart and wire Firebase into your Flutter app.
+4. Add dependencies: firebase_core, firebase_auth, google_sign_in, flutter_facebook_auth (and optional flutterfire_ui).
+5. Implement auth flows in Dart:
+    Email/password register & login + sendPasswordResetEmail.
+    Google sign in (native plugin + Firebase credential).
+    Facebook sign in (facebook plugin + Firebase credential).
+6. Test
+
+
