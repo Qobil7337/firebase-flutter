@@ -21,7 +21,41 @@
 
    (You’ll come back here after setting up Android package names / iOS bundle ids / Facebook App.)
 
+# Flutter fire
+run: dart pub global activate flutterfire_cli
+then, add it to path
+open your terminal config:
+  nano ~/.zshrc
 
+Add this line at the bottom:
+  export PATH="$PATH":"$HOME/.pub-cache/bin"
+
+Then save and reload your shell:
+  source ~/.zshrc
+
+Test it works:
+  flutterfire --version
+
+Then, run:
+  flutterfire configure
+if you see error: ERROR: The FlutterFire CLI currently requires the official Firebase CLI to also be installed
+then, you need to install The FlutterFire CLI (flutterfire configure) depends on the official Firebase CLI (the Node.js command-line tool) to talk to your Firebase account.
+
+run npm install -g firebase-tools
+Check it’s installed: firebase --version
+
+Log into Firebase
+run firebase login
+
+Once logged in, verify your projects list:
+firebase projects:list
+
+Re-run FlutterFire configure
+flutterfire configure
+
+select platforms
+
+// this one is not nessesary if you use flutter fire
 # Create apps in Firebase (Android & iOS)
 Android
 1. In Firebase Console → Project Overview → Project settings → under your apps section click Android icon to add Android app.
